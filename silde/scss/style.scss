@@ -1,0 +1,54 @@
+.banner {
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  /*The Slides*/
+  &:nth-child(1) {
+    background-image: url(http://i.imgur.com/BSZBbWz.jpg);
+    background-position: center;
+  }
+  &:nth-child(2) {
+    background-image: url(http://i.imgur.com/sunsmnF.jpg);
+  }
+  &:nth-child(3) {
+    background-image: url(http://i.imgur.com/TBTtkzb.jpg);
+  }
+  &:nth-child(4) {
+    background-image: url(http://i.imgur.com/2DRyiCL.jpg);
+  }
+  &:nth-child(5) {
+    background-image: url(http://i.imgur.com/k92ulv8.jpg);
+  }
+  &:nth-child(6) {
+    background-image: url(http://i.imgur.com/mTcxhjc.jpg);
+  }
+  &:nth-child(7) {
+    background-image: url(http://i.imgur.com/hfAOvU2.jpg);
+  }
+  &:nth-child(8) {
+    background-image: url(http://i.imgur.com/cMOG4LD.jpg);
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.wsbc {
+    $fc: black;
+    $bc: white;
+    text-shadow: 0 0 1em $bc, 0 0 0.4em $bc, 0 0 0.6em $bc, 0 0 0.2em $bc;
+    color: $fc;
+  }
+  &.bswc {
+    $fc: white;
+    $bc: black;
+    text-shadow: 0 0 1em $bc, 0 0 0.4em $bc, 0 0 0.6em $bc, 0 0 0.2em $bc;
+    color: $fc;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+}

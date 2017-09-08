@@ -1,0 +1,42 @@
+.anim {
+    background-image: url(http://i.imgur.com/af1RSLn.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.anim {
+    animation: animationFrames linear 6s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+    /*when the spec is finished*/
+}
+
+.anim:hover {
+    animation: animationFrames linear 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+    /*when the spec is finished*/
+}
+
+@keyframes animationFrames {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+img.responsive-img,
+video.responsive-video {
+    max-width: 100%;
+    height: auto
+}
+
+divA Pen by Shelikhoo.row {
+    margin-bottom: 12px;
+    !important
+}

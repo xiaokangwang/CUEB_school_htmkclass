@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Let's Move</title>
+
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">相信真实</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/darkenshow/index.html" href="/darkenshow/index.html">请帮助自己</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/canvas/index.html">Let's Draw</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/misc/index.html">成为我们的一员</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/loc/index.html">位置API</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="valids">
+                    <div class="input-group input-group-lg ">
+                        <span class="input-group-addon" id="UnInd">#</span>
+                        <input id="inos" type="text" class="form-control" placeholder="Vender Code" aria-describedby="sizing-addon1" pattern="([A-Z]){4}-([a-z]){4}-([0-9a-z]){1,15}-([0-9A-Z]){1,15}" required />
+                        <button id="GenBtn" type="submit" class="btn">Generate</button>
+                    </div>
+                    <small id="fileHelp" class="form-text text-muted">Input Your Vender Code or Generate one</small>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        成员证明
+                    </div>
+                    <div class="card-block">
+                        <h4 class="card-title">感谢您支持一个更好的明天</h4>
+                        <p class="card-text">敬爱的<span id="Assoc"></span>,欢迎您加入我们。请和我们一起拯救人类和自己。</p>
+                        <p id="Cent"></p>
+                        <a href="#" class="btn btn-primary">分享这个称号</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <video class="responsive-video" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+    <script src="js/RegGen.js"></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
